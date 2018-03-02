@@ -1,8 +1,8 @@
 
 var app = angular.module('App', []);
-app.controller('Controller', function($scope) {
+app.controller('Controller', ['$scope', '$http', ($scope, $http) => {
 
     $scope.firstName = "John";
     $scope.lastName = "Doe";
     
-});
+}]);
